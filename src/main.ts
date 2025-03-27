@@ -1,0 +1,18 @@
+import { createPinia } from 'pinia';
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import routes from '~pages';
+import App from './App.vue';
+import 'element-plus/dist/index.css';
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+const app = createApp(App);
+app.use(createPinia());
+
+app.use(router);
+
+app.mount('#app');
