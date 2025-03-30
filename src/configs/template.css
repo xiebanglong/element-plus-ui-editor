@@ -1,0 +1,483 @@
+:root {
+  // 字体部分
+  // 字体大小
+  --el-font-size-extra-large: 20px;
+  --el-font-size-large: 18px;
+  --el-font-size-medium: 16px;
+  --el-font-size-base: 14px;
+  --el-font-size-small: 13px;
+  --el-font-size-extra-small: 12px;
+
+  // 字重
+  --el-font-weight-primary: 500;
+
+  // 字体
+  --el-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+
+  // 主题色
+
+  // 边距
+  --el-border-width: 1px;
+  --el-border-style: solid;
+
+  --el-border-color-hover: var(--el-text-color-disabled);
+  --el-border: var(--el-border-width) var(--el-border-style) var(--el-border-color);
+
+  // 圆角
+  --el-border-radius-base: 4px;
+  --el-border-radius-small: 2px;
+  --el-border-radius-round: 20px;
+  --el-border-radius-circle: 100%;
+
+}
+
+
+// 组件部分
+// 按钮部分
+.el-button {
+  --el-button-font-weight: var(--el-font-weight-primary);
+}
+.el-button {
+  height: 32px;
+  padding: 8px 15px;
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-button-font-weight);
+  border-radius: var(--el-border-radius-base)
+}
+
+
+.el-button+.el-button {
+  margin-left: 12px
+}
+
+.el-button [class*=el-icon]+span {
+  margin-left: 6px
+}
+
+.el-button:focus,
+.el-button:hover {
+  color: var(--el-button-hover-text-color);
+  border-color: var(--el-button-hover-border-color);
+  background-color: var(--el-button-hover-bg-color);
+}
+
+.el-button:active {
+  color: var(--el-button-active-text-color);
+  border-color: var(--el-button-active-border-color);
+  background-color: var(--el-button-active-bg-color);
+}
+
+.el-button.is-active {
+  color: var(--el-button-active-text-color);
+  border-color: var(--el-button-active-border-color);
+  background-color: var(--el-button-active-bg-color);
+}
+
+.el-button.is-loading:before {
+  background-color: var(--el-mask-color-extra-light)
+}
+
+
+.el-button--large {
+  --el-button-size: 40px;
+  height: var(--el-button-size);
+  padding: 12px 19px;
+  font-size: var(--el-font-size-base);
+  border-radius: var(--el-border-radius-base)
+}
+
+.el-button--large [class*=el-icon]+span {
+  margin-left: 8px
+}
+
+.el-button--small {
+  --el-button-size: 24px;
+  height: var(--el-button-size);
+  padding: 5px 11px;
+  font-size: 12px;
+  border-radius: calc(var(--el-border-radius-base) - 1px)
+}
+
+.el-button--small [class*=el-icon]+span {
+  margin-left: 4px
+}
+
+// 输入框部分
+.el-input {
+  --el-input-height: var(--el-component-size);
+  font-size: var(--el-font-size-base);
+  width: var(--el-input-width);
+  line-height: var(--el-input-height);
+}
+
+.el-input__wrapper {
+  padding: 1px 11px;
+  background-color: var(--el-input-bg-color, var(--el-fill-color-blank));
+  border-radius: var(--el-input-border-radius, var(--el-border-radius-base));
+}
+
+.el-input__inner {
+  --el-input-inner-height: calc(var(--el-input-height, 32px) - 2px);
+  padding: 0;
+}
+
+.el-input--large {
+  --el-input-height: var(--el-component-size-large);
+  font-size: 14px;
+}
+
+.el-input--large .el-input__wrapper {
+  padding: 1px 15px;
+}
+
+.el-input--large .el-input__inner {
+  --el-input-inner-height: calc(var(--el-input-height, 40px) - 2px);
+}
+
+.el-input--small {
+  --el-input-height: var(--el-component-size-small);
+  font-size: 12px;
+}
+
+.el-input--small .el-input__wrapper {
+  padding: 1px 7px;
+}
+
+.el-input--small .el-input__inner {
+  --el-input-inner-height: calc(var(--el-input-height, 24px) - 2px);
+}
+
+// 数字输入框
+.el-input-number {
+  width: 150px;
+  line-height: 30px
+}
+
+.el-input-number .el-input__wrapper {
+  padding-left: 42px;
+  padding-right: 42px
+}
+
+.el-input-number--large {
+  width: 180px;
+  line-height: 38px
+}
+
+.el-input-number--small {
+  width: 120px;
+  line-height: 22px
+}
+
+
+// 多选框
+.el-checkbox {
+  font-weight: var(--el-checkbox-font-weight);
+  font-size: var(--el-font-size-base);
+  margin-right: 30px;
+  padding: 0px;
+  height: var(--el-checkbox-height, 32px)
+}
+
+.el-checkbox__inner {
+  border: var(--el-checkbox-input-border);
+  border-radius: var(--el-checkbox-border-radius);
+  width: var(--el-checkbox-input-width);
+  height: var(--el-checkbox-input-height);
+}
+
+// 多选框中的对勾
+.el-checkbox__inner::after {
+  height: 7px;
+  left: 4px;
+  top: 1px;
+  width: 3px;
+}
+
+.el-checkbox__label {
+  padding-left: 8px;
+  font-size: var(--el-checkbox-font-size)
+}
+
+.el-checkbox.el-checkbox--large {
+  height: 40px
+}
+
+.el-checkbox.el-checkbox--large .el-checkbox__label {
+  font-size: 14px
+}
+
+.el-checkbox.el-checkbox--large .el-checkbox__inner {
+  width: 14px;
+  height: 14px
+}
+
+.el-checkbox.el-checkbox--small {
+  height: 24px
+}
+
+.el-checkbox.el-checkbox--small .el-checkbox__label {
+  font-size: 12px
+}
+
+.el-checkbox.el-checkbox--small .el-checkbox__inner {
+  width: 12px;
+  height: 12px
+}
+
+.el-checkbox.el-checkbox--small .el-checkbox__inner::after {
+  width: 2px;
+  height: 6px
+}
+
+// 单选框
+.el-radio {
+  font-size: var(--el-font-size-base);
+  margin-right: 32px;
+  height: 32px
+}
+
+
+.el-radio.el-radio--large {
+  height: 40px
+}
+
+.el-radio.el-radio--small {
+  height: 24px
+}
+
+.el-radio__inner {
+  border: var(--el-radio-input-border);
+  border-radius: var(--el-radio-input-border-radius);
+  width: var(--el-radio-input-width);
+  height: var(--el-radio-input-height);
+}
+
+// 小圆点
+.el-radio__inner::after {
+  width: 4px;
+  height: 4px;
+  border-radius: var(--el-radio-input-border-radius);
+}
+
+
+.el-radio__label {
+  font-size: var(--el-radio-font-size);
+  padding-left: 8px
+}
+
+.el-radio.el-radio--large .el-radio__label {
+  font-size: 14px
+}
+
+.el-radio.el-radio--large .el-radio__inner {
+  width: 14px;
+  height: 14px
+}
+
+.el-radio.el-radio--small .el-radio__label {
+  font-size: 12px
+}
+
+.el-radio.el-radio--small .el-radio__inner {
+  width: 12px;
+  height: 12px
+}
+
+
+// 表单部分
+.el-form {
+  --el-form-label-font-size: var(--el-font-size-base);
+}
+
+.el-form-item {
+  display: flex;
+  --font-size: 14px;
+  margin-bottom: 18px
+}
+
+.el-form--inline .el-form-item {
+  margin-right: 32px
+}
+
+
+.el-form-item--large {
+  --font-size: 14px;
+  --el-form-label-font-size: var(--font-size);
+  margin-bottom: 22px
+}
+
+.el-form-item--large .el-form-item__label {
+  height: 40px;
+  line-height: 40px
+}
+
+.el-form-item--large .el-form-item__content {
+  line-height: 40px
+}
+
+.el-form-item--large .el-form-item__error {
+  padding-top: 4px
+}
+
+.el-form-item--default {
+  --font-size: 14px;
+  --el-form-label-font-size: var(--font-size);
+  margin-bottom: 18px
+}
+
+.el-form-item--default .el-form-item__label {
+  height: 32px;
+  line-height: 32px
+}
+
+.el-form-item--default .el-form-item__content {
+  line-height: 32px
+}
+
+.el-form-item--default .el-form-item__error {
+  padding-top: 2px
+}
+
+.el-form-item--small {
+  --font-size: 12px;
+  --el-form-label-font-size: var(--font-size);
+  margin-bottom: 18px
+}
+
+.el-form-item--small .el-form-item__label {
+  height: 24px;
+  line-height: 24px
+}
+
+.el-form-item--small .el-form-item__content {
+  line-height: 24px
+}
+
+.el-form-item--small .el-form-item__error {
+  padding-top: 2px
+}
+
+.el-form-item__label-wrap {
+  display: flex
+}
+
+.el-form-item__label {
+  font-size: var(--el-form-label-font-size);
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px 0 0;
+}
+
+.el-form-item__content {
+  line-height: 32px;
+  font-size: var(--font-size);
+}
+
+.el-form-item__error {
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 2px;
+  top: 100%;
+  left: 0
+}
+
+// 表格部分
+.el-table {
+  font-size: 14px;
+}
+
+.el-table .el-table__cell {
+  padding: 8px 0;
+}
+
+.el-table .cell {
+  padding: 0 12px;
+}
+
+
+.el-table--large {
+  font-size: var(--el-font-size-base)
+}
+
+.el-table--large .el-table__cell {
+  padding: 12px 0
+}
+
+.el-table--large .cell {
+  padding: 0 16px
+}
+
+.el-table--default {
+  font-size: 14px
+}
+
+.el-table--default .el-table__cell {
+  padding: 8px 0
+}
+
+.el-table--default .cell {
+  padding: 0 12px
+}
+
+.el-table--small {
+  font-size: 12px
+}
+
+.el-table--small .el-table__cell {
+  padding: 4px 0
+}
+
+.el-table--small .cell {
+  padding: 0 8px
+}
+
+
+
+// 弹出框部分
+
+  // dialog
+  .el-dialog {
+    --el-dialog-width: 50%;
+    --el-dialog-margin-top: 15vh;
+    --el-dialog-title-font-size: var(--el-font-size-large);
+    --el-dialog-content-font-size: 14px;
+    --el-dialog-padding-primary: 20px;
+    --el-dialog-border-radius: var(--el-border-radius-small);
+    margin: var(--el-dialog-margin-top, 15vh) auto 50px;
+    width: var(--el-dialog-width, 50%)
+  }
+
+  .el-dialog__header {
+    padding: var(--el-dialog-padding-primary);
+    padding-bottom: 10px;
+    margin-right: 16px
+  }
+
+  .el-dialog__headerbtn {
+    width: 54px;
+    height: 54px;
+    font-size: var(--el-message-close-size, 16px)
+  }
+
+  .el-dialog__footer {
+    padding: var(--el-dialog-padding-primary);
+    padding-top: 10px;
+  }
+
+// 标签页
+.el-tabs {
+  --el-tabs-header-height: 40px
+}
+
+.el-tabs__header {
+  padding: 0;
+  margin: 0 0 15px
+}
+
+.el-tabs__content {
+  padding: 0px;
+}
+
+.el-tabs__nav-wrap::after {
+  height: 2px;
+}

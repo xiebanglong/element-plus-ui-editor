@@ -1,0 +1,143 @@
+{
+  "tokens": {
+    "font": [
+      {
+        "key": "font-size-extra-large",
+        "attrName": "--el-font-size-extra-large",
+        "desc": "超大字体",
+        "value": "20px",
+        "className": ":root"
+      }
+    ]
+  },
+  "components": {
+    "button": [
+      {
+        "key": "button-size-default-height",
+        "attrName": "height",
+        "desc": "高度",
+        "value": "32px",
+        "className": [".el-button", ".el-button--default"]
+      },
+      {
+        "key": "button-size-default-padding",
+        "attrName": "padding",
+        "desc": "内边距",
+        "value": "8px 15px",
+        "className":  [ ".el-button", ".el-button--default"]
+      },
+      {
+        "key": "button-size-default-font-size",
+        "attrName": "font-size",
+        "desc": "字体大小",
+        "value": "var(--el-font-size-base)",
+        "className":  [ ".el-button", ".el-button--default"]
+      },
+      {
+        "key": "button-size-default=font-weight",
+        "attrName": "--el-button-font-weight",
+        "desc": "字重",
+        "value": "var(--el-font-weight-primary)",
+        "className":  [ ".el-button", ".el-button--default"]
+      },
+      {
+        "key": "button-size-default-border-radius",
+        "attrName": "border-radius",
+        "desc": "圆角",
+        "value": "var(--el-border-radius-base)",
+        "className":  [ ".el-button", ".el-button--default"]
+      },
+      {
+        "key": "button-size-default-margin-left",
+        "attrName": "margin-right",
+        "desc": "外边距右",
+        "value": "12px",
+        "className":  [ ".el-button.el-button"]
+      },
+      {
+        "key": "button-size-small-height",
+        "attrName": "height",
+        "desc": "高度",
+        "value": "32px",
+        "className": [".el-button", ".el-button--default"]
+      },
+      {
+        "key": "button-size-small-padding",
+        "attrName": "padding",
+        "desc": "内边距",
+        "value": "8px 15px",
+        "className":  [ ".el-button", ".el-button--small"]
+      },
+      {
+        "key": "button-size-small-font-size",
+        "attrName": "font-size",
+        "desc": "字体大小",
+        "value": "var(--el-font-size-base)",
+        "className":  [ ".el-button", ".el-button--small"]
+      },
+      {
+        "key": "button-size-small=font-weight",
+        "attrName": "--el-button-font-weight",
+        "desc": "字重",
+        "value": "var(--el-font-weight-primary)",
+        "className":  [ ".el-button", ".el-button--small"]
+      },
+      {
+        "key": "button-size-small-border-radius",
+        "attrName": "border-radius",
+        "desc": "圆角",
+        "value": "var(--el-border-radius-base)",
+        "className":  [ ".el-button", ".el-button--small"]
+      },
+      {
+        "key": "button-size-small-margin-left",
+        "attrName": "margin-right",
+        "desc": "外边距右",
+        "value": "12px",
+        "className":  [ ".el-button.el-button"]
+      },
+      {
+        "key": "button-size-large-height",
+        "attrName": "height",
+        "desc": "高度",
+        "value": "32px",
+        "className": [".el-button", ".el-button--large"]
+      },
+      {
+        "key": "button-size-large-padding",
+        "attrName": "padding",
+        "desc": "内边距",
+        "value": "8px 15px",
+        "className":  [ ".el-button", ".el-button--large"]
+      },
+      {
+        "key": "button-size-large-font-size",
+        "attrName": "font-size",
+        "desc": "字体大小",
+        "value": "var(--el-font-size-base)",
+        "className":  [ ".el-button", ".el-button--large"]
+      },
+      {
+        "key": "button-size-large=font-weight",
+        "attrName": "--el-button-font-weight",
+        "desc": "字重",
+        "value": "var(--el-font-weight-primary)",
+        "className":  [ ".el-button", ".el-button--large"]
+      },
+      {
+        "key": "button-size-large-border-radius",
+        "attrName": "border-radius",
+        "desc": "圆角",
+        "value": "var(--el-border-radius-base)",
+        "className":  [ ".el-button", ".el-button--large"]
+      },
+      {
+        "key": "button-size-large-margin-left",
+        "attrName": "margin-right",
+        "desc": "外边距右",
+        "value": "12px",
+        "className":  [ ".el-button.el-button"]
+      }
+    ]
+  }
+}

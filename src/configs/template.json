@@ -1,0 +1,248 @@
+{
+  "tokens": {
+    "font": [
+      {
+        "key": "font-size-extra-large",
+        "desc": "超大字体",
+        "value": "32px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "attrName": "--el-font-size-extra-large",
+          "className": ":root"
+        },
+        "type": "global"
+      }
+    ]
+  },
+  "component": {
+    "button": [
+      {
+        "key": "button-size-default-height",
+        "desc": "高度",
+        "value": "32px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "default",
+          "title": "尺寸",
+          "attrName": "height",
+          "className": [".el-button", ".el-button--default"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-default-padding",
+        "desc": "内边距",
+        "value": "8px 15px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "default",
+          "title": "边距",
+          "attrName": "padding",
+          "className": [".el-button", ".el-button--default"]
+        },
+        "type": "spacing"
+      },
+      {
+        "key": "button-size-default-font-size",
+        "desc": "字体大小",
+        "value": "var(--el-font-size-base)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "default",
+          "title": "文本",
+          "attrName": "font-size",
+          "className": [".el-button", ".el-button--default"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-default-font-weight",
+        "desc": "字重",
+        "value": "var(--el-font-weight-primary)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "default",
+          "title": "文本",
+          "attrName": "--el-button-font-weight",
+          "className": [".el-button", ".el-button--default"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-default-border-radius",
+        "desc": "圆角",
+        "value": "var(--el-border-radius-base)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "default",
+          "title": "Border",
+          "attrName": "border-radius",
+          "className": [".el-button", ".el-button--default"]
+        },
+        "type": "borderRadius"
+      },
+      {
+        "key": "button-size-default-margin-left",
+        "desc": "外边距左",
+        "value": "12px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "default",
+          "title": "边距",
+          "attrName": "margin-left",
+          "className": [".el-button+.el-button"]
+        },
+        "type": "spacing"
+      },
+      {
+        "key": "button-size-small-height",
+        "desc": "高度",
+        "value": "32px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "small",
+          "title": "尺寸",
+          "attrName": "height",
+          "className": [".el-button--small"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-small-padding",
+        "desc": "内边距",
+        "value": "8px 15px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "small",
+          "title": "边距",
+          "attrName": "padding",
+          "className": [".el-button--small"]
+        },
+        "type": "spacing"
+      },
+      {
+        "key": "button-size-small-font-size",
+        "desc": "字体大小",
+        "value": "var(--el-font-size-base)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "small",
+          "title": "文本",
+          "attrName": "font-size",
+          "className": [".el-button--small"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-small-font-weight",
+        "desc": "字重",
+        "value": "var(--el-font-weight-primary)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "small",
+          "title": "文本",
+          "attrName": "--el-button-font-weight",
+          "className": [".el-button--small"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-small-border-radius",
+        "desc": "圆角",
+        "value": "var(--el-border-radius-base)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "small",
+          "title": "Border",
+          "attrName": "border-radius",
+          "className": [".el-button--small"]
+        },
+        "type": "borderRadius"
+      },
+      {
+        "key": "button-size-large-height",
+        "desc": "高度",
+        "value": "32px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "large",
+          "title": "尺寸",
+          "attrName": "height",
+          "className": [".el-button--large"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-large-padding",
+        "desc": "内边距",
+        "value": "8px 15px",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "large",
+          "title": "边距",
+          "attrName": "padding",
+          "className": [".el-button--large"]
+        },
+        "type": "spacing"
+      },
+      {
+        "key": "button-size-large-font-size",
+        "desc": "字体大小",
+        "value": "var(--el-font-size-base)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "large",
+          "title": "文本",
+          "attrName": "font-size",
+          "className": [".el-button--large"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-large-font-weight",
+        "desc": "字重",
+        "value": "var(--el-font-weight-primary)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "large",
+          "title": "文本",
+          "attrName": "--el-button-font-weight",
+          "className": [".el-button--large"]
+        },
+        "type": "size"
+      },
+      {
+        "key": "button-size-large-border-radius",
+        "desc": "圆角",
+        "value": "var(--el-border-radius-base)",
+        "configurable": true,
+        "profile": {
+          "group": "Default",
+          "sort": "large",
+          "title": "Border",
+          "attrName": "border-radius",
+          "className": [".el-button--large"]
+        },
+        "type": "borderRadius"
+      }
+    ],
+    "input": [
+    ]
+  }
+}

@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import ThemeEditor from './components/ThemeEditor.vue';
+import Index from '@/pages/index.vue';
 </script>
 
 <template>
-  <ThemeEditor />
+  <div class="app">
+    <index />
+  </div>
 </template>
 
-<style>
-body {
+<style lang="less">
+.app {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 </style>
