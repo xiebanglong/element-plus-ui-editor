@@ -4,16 +4,16 @@
     <!-- 左侧菜单 -->
     <div class="sidebar">
       <el-menu :default-active="activeMenu" class="sidebar-menu" @select="handleMenuSelect">
-        <el-sub-menu index="tokens">
+        <el-sub-menu index="token">
           <template #title>
             <span>基础样式</span>
           </template>
-          <el-menu-item index="/tokens/color">颜色</el-menu-item>
-          <el-menu-item index="/tokens/font">字体</el-menu-item>
-          <el-menu-item index="/tokens/border">边框</el-menu-item>
-          <el-menu-item index="/tokens/radius">圆角</el-menu-item>
-          <el-menu-item index="/tokens/margin">边距</el-menu-item>
-          <el-menu-item index="/tokens/size">尺寸</el-menu-item>
+          <el-menu-item index="/token/color">颜色</el-menu-item>
+          <el-menu-item index="/token/font">字体</el-menu-item>
+          <el-menu-item index="/token/border">边框</el-menu-item>
+          <el-menu-item index="/token/radius">圆角</el-menu-item>
+          <el-menu-item index="/token/margin">边距</el-menu-item>
+          <el-menu-item index="/token/size">尺寸</el-menu-item>
         </el-sub-menu>
 
         <el-sub-menu index="component">
@@ -39,13 +39,13 @@
     </div>
     <!-- 右侧编辑区 -->
     <div class="editor">
-      <property-editor :component="currentComponent" />
+      <property-editor />
     </div>
   </div>
 </template>
 
-<script setup>
-import { ref, computed } from 'vue';
+<script setup lang="ts">
+import { ref, computed, onMounted } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { useStyleStore } from '@/stores/style';
 import PropertyEditor from '@/components/editors/PropertyEditor.vue';
@@ -61,16 +61,16 @@ const locale = ref(zhCn);
 // 当前激活的菜单项
 const activeMenu = computed(() => route.path);
 
-const currentComponent = ref('button');
-
 // 处理菜单选择
-const handleMenuSelect = index => {
+const handleMenuSelect = (index: string) => {
   try {
     const paths = index.split('/');
     router.push(index);
-    currentComponent.value = paths[2];
-    if (currentComponent.value) {
-      styleStore.setActiveComponent(currentComponent.value);
+
+    if (paths[1] === 'token') {
+      styleStore.setActiveItem('token', paths[2]);
+    } else if (paths[1] === 'component') {
+      styleStore.setActiveItem('component', paths[2]);
     }
   } catch (err) {
     console.log(err);

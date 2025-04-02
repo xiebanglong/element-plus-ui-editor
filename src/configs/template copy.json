@@ -41,6 +41,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-default-padding-horizontal",
           "desc": "内边距左右",
           "value": "15px",
@@ -55,6 +56,7 @@
           "type": "spacing"
         },
         {
+          "componentName": "button",
           "key": "button-size-default-font-size",
           "desc": "字体大小",
           "value": "var(--el-font-size-base)",
@@ -69,6 +71,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-default-font-weight",
           "desc": "字重",
           "value": "var(--el-font-weight-primary)",
@@ -83,6 +86,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-default-border-radius",
           "desc": "圆角",
           "value": "var(--el-border-radius-base)",
@@ -97,6 +101,7 @@
           "type": "borderRadius"
         },
         {
+          "componentName": "button",
           "key": "button-size-default-margin-left",
           "desc": "外边距左",
           "value": "12px",
@@ -111,6 +116,7 @@
           "type": "spacing"
         },
         {
+          "componentName": "button",
           "key": "button-size-small-height",
           "desc": "高度",
           "value": "24px",
@@ -125,6 +131,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-small-padding-horizontal",
           "desc": "内边距左右",
           "value": "15px",
@@ -139,6 +146,7 @@
           "type": "spacing"
         },
         {
+          "componentName": "button",
           "key": "button-size-small-font-size",
           "desc": "字体大小",
           "value": "var(--el-font-size-base)",
@@ -153,6 +161,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-small-font-weight",
           "desc": "字重",
           "value": "var(--el-font-weight-primary)",
@@ -167,6 +176,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-small-border-radius",
           "desc": "圆角",
           "value": "var(--el-border-radius-base)",
@@ -181,6 +191,7 @@
           "type": "borderRadius"
         },
         {
+          "componentName": "button",
           "key": "button-size-large-height",
           "desc": "高度",
           "value": "40px",
@@ -195,6 +206,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-small-large-horizontal",
           "desc": "内边距左右",
           "value": "15px",
@@ -209,6 +221,7 @@
           "type": "spacing"
         },
         {
+          "componentName": "button",
           "key": "button-size-large-font-size",
           "desc": "字体大小",
           "value": "var(--el-font-size-base)",
@@ -223,6 +236,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-large-font-weight",
           "desc": "字重",
           "value": "var(--el-font-weight-primary)",
@@ -237,6 +251,7 @@
           "type": "size"
         },
         {
+          "componentName": "button",
           "key": "button-size-large-border-radius",
           "desc": "圆角",
           "value": "var(--el-border-radius-base)",
@@ -257,7 +272,8 @@
       "type": "component",
       "list": [
         {
-          "key": "button-size-default-height",
+          "componentName": "input",
+          "key": "input-size-default-height",
           "desc": "高度",
           "value": "var(--el-component-size)",
           "configurable": true,
@@ -271,7 +287,8 @@
           "type": "size"
         },
         {
-          "key": "button-size-default-font-size",
+          "componentName": "input",
+          "key": "input-size-default-font-size",
           "desc": "字体大小",
           "value": "var(--el-font-size-base)",
           "configurable": true,
@@ -285,7 +302,8 @@
           "type": "size"
         },
         {
-          "key": "button-size-default-width",
+          "componentName": "input",
+          "key": "input-size-default-width",
           "desc": "宽度",
           "value": "var(--el-input-width)",
           "configurable": true,
@@ -299,7 +317,8 @@
           "type": "size"
         },
         {
-          "key": "button-size-default-padding",
+          "componentName": "input",
+          "key": "input-size-default-padding",
           "desc": "内边距",
           "value": "1px 11px",
           "configurable": true,
@@ -313,7 +332,8 @@
           "type": "spacing"
         },
         {
-          "key": "button-size-default-border-radius",
+          "componentName": "input",
+          "key": "input-size-default-border-radius",
           "desc": "圆角",
           "value": "var(--el-input-border-radius)",
           "configurable": true,

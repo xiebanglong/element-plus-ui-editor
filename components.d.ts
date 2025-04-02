@@ -40,6 +40,7 @@ declare module '@vue/runtime-core' {
     InputEditor: typeof import('./src/components/editors/InputEditor.vue')['default']
     MarginEditor: typeof import('./src/components/editors/MarginEditor.vue')['default']
     PropertyEditor: typeof import('./src/components/editors/PropertyEditor.vue')['default']
+    'PropertyEditor copy': typeof import('./src/components/editors/PropertyEditor copy.vue')['default']
     RadiusEditor: typeof import('./src/components/editors/RadiusEditor.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
@@ -48,6 +49,7 @@ declare module '@vue/runtime-core' {
     TableEditor: typeof import('./src/components/editors/TableEditor.vue')['default']
     TabsEditor: typeof import('./src/components/editors/TabsEditor.vue')['default']
     ThemeEditor: typeof import('./src/components/ThemeEditor.vue')['default']
+    TokenEditor: typeof import('./src/components/TokenEditor.vue')['default']
     TopBar: typeof import('./src/components/TopBar.vue')['default']
   }
 }
