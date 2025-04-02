@@ -3,8 +3,8 @@
     <h2>按钮编辑器</h2>
     <div>
       <el-button>默认按钮</el-button>
-      <el-button size="large">大按钮</el-button>
       <el-button size="small">小按钮</el-button>
+      <el-button size="large">大按钮</el-button>
     </div>
   </div>
 </template>

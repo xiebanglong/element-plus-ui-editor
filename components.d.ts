@@ -48,6 +48,7 @@ declare module '@vue/runtime-core' {
     TableEditor: typeof import('./src/components/editors/TableEditor.vue')['default']
     TabsEditor: typeof import('./src/components/editors/TabsEditor.vue')['default']
     ThemeEditor: typeof import('./src/components/ThemeEditor.vue')['default']
+    TopBar: typeof import('./src/components/TopBar.vue')['default']
   }
 }
 

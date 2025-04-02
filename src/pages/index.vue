@@ -1,8 +1,9 @@
 <template>
+  <TopBar></TopBar>
   <div class="style-editor">
     <!-- 左侧菜单 -->
     <div class="sidebar">
-      <el-menu :default-active="activeMenu" class="sidebar-menu" @on-select="handleMenuSelect">
+      <el-menu :default-active="activeMenu" class="sidebar-menu" @select="handleMenuSelect">
         <el-sub-menu index="tokens">
           <template #title>
             <span>基础样式</span>
@@ -36,7 +37,6 @@
         <router-view></router-view>
       </el-config-provider>
     </div>
-
     <!-- 右侧编辑区 -->
     <div class="editor">
       <property-editor :component="currentComponent" />
@@ -50,6 +50,7 @@ import { useRouter, useRoute } from 'vue-router';
 import { useStyleStore } from '@/stores/style';
 import PropertyEditor from '@/components/editors/PropertyEditor.vue';
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs';
+import TopBar from '@/components/TopBar.vue';
 
 const router = useRouter();
 const route = useRoute();
@@ -66,7 +67,7 @@ const currentComponent = ref('button');
 const handleMenuSelect = index => {
   try {
     const paths = index.split('/');
-    router.push(index, 'index');
+    router.push(index);
     currentComponent.value = paths[2];
     if (currentComponent.value) {
       styleStore.setActiveComponent(currentComponent.value);
@@ -86,6 +87,7 @@ onMounted(() => {
   display: grid;
   grid-template-columns: 240px 1fr 300px;
   height: 100vh;
+  margin-top: 60px;
 }
 
 .sidebar {

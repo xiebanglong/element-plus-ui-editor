@@ -107,7 +107,6 @@
   --el-input-height: var(--el-component-size);
   font-size: var(--el-font-size-base);
   width: var(--el-input-width);
-  line-height: var(--el-input-height);
 }
 
 .el-input__wrapper {
