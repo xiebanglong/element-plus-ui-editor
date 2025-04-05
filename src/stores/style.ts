@@ -162,6 +162,12 @@ export const useStyleStore = defineStore('style', () => {
     return rules;
   };
 
+  const wrapperCssContent = (cssContent: string) => {
+    return `*[theme=custom] {
+      ${cssContent}
+    }`;
+  };
+
   // 生成CSS内容
   const generateCssContent = () => {
     let cssContent = '';
@@ -190,7 +196,7 @@ export const useStyleStore = defineStore('style', () => {
       });
     }
 
-    return cssContent;
+    return wrapperCssContent(cssContent);
   };
 
   // 获取修改后的配置
@@ -240,7 +246,7 @@ export const useStyleStore = defineStore('style', () => {
       });
       cssRules += '}\n';
     });
-    style.textContent = cssRules;
+    style.textContent = wrapperCssContent(cssRules);
     document.head.appendChild(style);
   };
 
@@ -274,7 +280,7 @@ export const useStyleStore = defineStore('style', () => {
       });
       cssRules += '}\n';
     });
-    style.textContent = cssRules;
+    style.textContent = wrapperCssContent(cssRules);
     document.head.appendChild(style);
   };
 

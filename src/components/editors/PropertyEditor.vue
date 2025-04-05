@@ -1,9 +1,6 @@
 <template>
   <div class="property-editor">
     <template v-if="currentItem">
-      <div class="editor-header">
-        <h2>{{ currentItem.name }} 属性</h2>
-      </div>
       <el-tabs v-model="activeTab">
         <el-tab-pane
           v-for="(group, groupName) in groupedProperties"

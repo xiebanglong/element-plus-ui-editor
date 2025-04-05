@@ -32,7 +32,7 @@
     </div>
 
     <!-- 中间预览区 -->
-    <div class="preview">
+    <div class="preview" theme="custom">
       <el-config-provider :locale="locale">
         <router-view></router-view>
       </el-config-provider>
